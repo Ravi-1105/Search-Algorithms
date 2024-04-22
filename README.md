@@ -19,24 +19,71 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
-
-
+lst=eval(input())
+key=int(input())
+lst.sort()
+def linSearch(lst,key):
+    for i in range(len(lst)):
+       if lst[i]==key:
+           return i
+    return -1    
+print(lst)
+res=linSearch(lst,key)
+if res == -1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
-
-
-
+def binSearch(lst,key,low,high):
+    while(low<=high):
+        mid=low+(high-low)//2
+        if lst[mid]==key:
+            return mid;
+        elif lst[mid]<key:
+            low=mid+1
+        elif lst[mid]>key:
+            high=mid-1
+    return -1
+    
+lst=eval(input())
+key=int(input())
+lst.sort()
+low=0
+high=len(lst)-1
+print(lst)
+res=binSearch(lst,key,low,high)
+if res == -1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
-
-
-
-
+def recSearch(lst,key,low,high):
+    if high>=low:
+        mid=low+(high-low)//2
+        if lst[mid]==key:
+            return mid
+        elif lst[mid]<key:
+            return recSearch(lst,key,mid+1,high)
+        elif lst[mid]>key:
+            return recSearch(lst,key,low,mid-1)
+    return -1
+    
+lst=eval(input())
+key=int(input())
+lst.sort()
+low=0
+high=len(lst)-1
+print(lst)
+res=recSearch(lst,key,low,high)
+if res == -1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 ```
 ## Sample Input and Output
