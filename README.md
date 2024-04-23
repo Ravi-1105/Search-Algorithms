@@ -87,11 +87,11 @@ else:
 
 ```
 ## Sample Input and Output
+![image](https://github.com/Ravi-1105/Search-Algorithms/assets/139841688/3c49c6cc-b3a1-4fd7-932d-4987e35c8323)
 
+![image](https://github.com/Ravi-1105/Search-Algorithms/assets/139841688/b370af41-f545-4a8a-9d52-79b20d0b0085)
 
-
-
-
+![image](https://github.com/Ravi-1105/Search-Algorithms/assets/139841688/322dc0db-841b-4b9e-8e5a-31365ea55b81)
 
 ## Result
 Thus the linear search and binary search algorithm is implemented using python programming.
